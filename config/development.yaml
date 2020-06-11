@@ -1,0 +1,5 @@
+APP_NAME: seed
+APP_ENV: development
+PORT: 3000
+LOGGER: plain
+LOG_LEVEL: verbose

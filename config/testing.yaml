@@ -1,0 +1,5 @@
+APP_NAME: water-gun-game-be
+APP_ENV: testing
+PORT: 3000
+LOGGER: json
+LOG_LEVEL: verbose
