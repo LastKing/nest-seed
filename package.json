@@ -21,7 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@donews/nestjs-config": "0.1.10",
+    "@donews/nestjs-config": "0.1.11",
     "@donews/nestjs-logger": "0.7.4",
     "@hapi/joi": "17.1.1",
     "@nestjs/common": "7.4.2",
