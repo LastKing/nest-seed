@@ -8,7 +8,6 @@
     "build": "tsc -p tsconfig.build.json",
     "gulp:build": "gulp default",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "format-staged": "pretty-quick --staged --pattern \"src/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nest start --watch",
