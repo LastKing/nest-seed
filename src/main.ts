@@ -1,11 +1,11 @@
-import { LOGGER } from '@donews/nestjs-logger';
 import { ConfigService } from '@donews/nestjs-config';
+import { LOGGER } from '@donews/nestjs-logger';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';
 
-async function bootstrap() {
+async function bootstrap(): Promise<void> {
   const NODE_ENV = process.env.NODE_ENV;
   const nestCoreLog = !NODE_ENV || /^dev/.test(NODE_ENV) ? undefined : false;
 

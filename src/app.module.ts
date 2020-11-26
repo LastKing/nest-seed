@@ -1,8 +1,9 @@
+import { join } from 'path';
+
 import { ConfigModule, ConfigService } from '@donews/nestjs-config';
 import { LoggerModule } from '@donews/nestjs-logger';
 import * as Joi from '@hapi/joi';
 import { Module } from '@nestjs/common';
-import { join } from 'path';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
