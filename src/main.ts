@@ -7,10 +7,13 @@ import { AppModule } from './app.module';
 
 async function bootstrap(): Promise<void> {
   const NODE_ENV = process.env.NODE_ENV;
-  const nestCoreLog = !NODE_ENV || /^dev/.test(NODE_ENV) ? undefined : false;
+  let isNestCoreLogEnv = process.env.NODE_NEST_CORE_LOG ? undefined : false;
+  if (!NODE_ENV || /^dev/.test(NODE_ENV)) {
+    isNestCoreLogEnv = undefined;
+  }
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-    logger: nestCoreLog,
+    logger: isNestCoreLogEnv,
   });
   const logger = app.get(LOGGER);
   app.useLogger(logger);
