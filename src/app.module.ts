@@ -2,11 +2,13 @@ import { join } from 'path';
 
 import { ConfigModule, ConfigService } from '@donews/nestjs-config';
 import { LoggerModule } from '@donews/nestjs-logger';
+import { PromModule, PromModuleOptions } from '@donews/nestjs-prom';
 import * as Joi from '@hapi/joi';
 import { Module } from '@nestjs/common';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { MetricController, metrics } from './metric.controller';
 
 @Module({
   imports: [
@@ -34,8 +36,23 @@ import { AppService } from './app.service';
       },
       inject: [ConfigService],
     }),
+    PromModule.forRootAsync(
+      {
+        useFactory(configService: ConfigService): PromModuleOptions {
+          return {
+            withDefaultsMetrics: true,
+            defaultLabels: {
+              app: configService.get('APP_NAME'),
+              env: configService.get('APP_ENV'),
+            },
+          };
+        },
+        inject: [ConfigService],
+      },
+      metrics,
+    ),
   ],
-  controllers: [AppController],
+  controllers: [AppController, MetricController],
   providers: [AppService],
 })
 export class AppModule {}
