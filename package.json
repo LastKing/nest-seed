@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@donews/nestjs-config": "0.1.11",
-    "@donews/nestjs-logger": "0.7.4",
+    "@donews/nestjs-logger": "0.7.5",
     "@donews/nestjs-prom": "0.0.1",
     "@hapi/joi": "17.1.1",
     "@nestjs/common": "7.6.5",
