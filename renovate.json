@@ -1,5 +1,5 @@
 {
-  "semanticCommits": true,
+  "semanticCommits": "auto",
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
