@@ -15,7 +15,7 @@ export class MetricController {
 
   @Get()
   @Header('Content-Type', 'text/plain; version=0.0.4; charset=utf-8')
-  get(): string {
+  get(): Promise<string> {
     return this.registry.metrics();
   }
 }
