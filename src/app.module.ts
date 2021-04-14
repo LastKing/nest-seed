@@ -3,8 +3,8 @@ import { join } from 'path';
 import { ConfigModule, ConfigService } from '@donews/nestjs-config';
 import { LoggerModule } from '@donews/nestjs-logger';
 import { PromModule, PromModuleOptions } from '@donews/nestjs-prom';
-import * as Joi from '@hapi/joi';
 import { Module } from '@nestjs/common';
+import * as Joi from 'joi';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
