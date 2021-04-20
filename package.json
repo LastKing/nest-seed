@@ -35,7 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.1",
     "@commitlint/config-angular": "12.1.1",
-    "@donews/eslint-config-donews": "1.0.2",
+    "@donews/eslint-config-donews": "1.0.3",
     "@nestjs/testing": "7.6.15",
     "@types/express": "4.17.11",
     "@types/jest": "26.0.22",
