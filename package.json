@@ -46,7 +46,7 @@
     "cross-env": "7.0.3",
     "eslint": "7.26.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-import": "2.23.0",
     "gulp": "4.0.2",
     "gulp-typescript": "5.0.1",
     "husky": "4.3.8",
