@@ -20,7 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@donews/nestjs-config": "0.8.1",
+    "@donews/nestjs-config": "0.8.3",
     "@donews/nestjs-logger": "0.8.1",
     "@donews/nestjs-prom": "0.8.1",
     "@nestjs/common": "7.6.17",
