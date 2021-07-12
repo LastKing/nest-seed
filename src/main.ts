@@ -7,7 +7,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap(): Promise<void> {
   const NODE_ENV = process.env.NODE_ENV;
-  let isNestCoreLogEnv = process.env.NODE_NEST_CORE_LOG ? undefined : false;
+  let isNestCoreLogEnv: undefined | false = process.env.NODE_NEST_CORE_LOG
+    ? undefined
+    : false;
   if (!NODE_ENV || /^dev/.test(NODE_ENV)) {
     isNestCoreLogEnv = undefined;
   }
