@@ -27,7 +27,7 @@
     "@nestjs/common": "8.0.4",
     "@nestjs/core": "8.0.4",
     "@nestjs/platform-express": "8.0.4",
-    "joi": "17.4.1",
+    "joi": "17.4.2",
     "prom-client": "13.1.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
