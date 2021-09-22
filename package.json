@@ -21,14 +21,14 @@
     "update": "ncu -u -x husky,@types/node,@commitlint/cli,@commitlint/config-angular"
   },
   "dependencies": {
-    "@donews/nestjs-config": "0.9.2",
-    "@donews/nestjs-logger": "0.9.2",
-    "@donews/nestjs-prom": "0.9.2",
+    "@donews/nestjs-config": "0.9.3",
+    "@donews/nestjs-logger": "0.9.3",
+    "@donews/nestjs-prom": "0.9.3",
     "@nestjs/common": "8.0.6",
     "@nestjs/core": "8.0.6",
     "@nestjs/platform-express": "8.0.6",
     "joi": "17.4.2",
-    "prom-client": "13.2.0",
+    "prom-client": "14.0.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.3.0"
