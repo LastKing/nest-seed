@@ -6,6 +6,5 @@
       "automerge": true
     }
   ],
-  "extends": ["config:base"],
-  "ignoreDeps": ["husky", "@commitlint/cli", "@commitlint/config-angular"]
+  "extends": ["config:base"]
 }
