@@ -35,7 +35,7 @@
     "rxjs": "7.5.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.0.3",
+    "@commitlint/cli": "16.1.0",
     "@commitlint/config-angular": "16.0.0",
     "@donews/eslint-config-donews": "1.0.3",
     "@nestjs/testing": "8.2.5",
