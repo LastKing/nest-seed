@@ -52,7 +52,7 @@
     "gulp": "4.0.2",
     "gulp-typescript": "5.0.1",
     "husky": "7.0.4",
-    "jest": "27.5.0",
+    "jest": "27.5.1",
     "lint-staged": "12.3.3",
     "prettier": "2.5.1",
     "supertest": "6.2.2",
