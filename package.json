@@ -22,7 +22,7 @@
     "update": "ncu -u -x husky,@types/node,@commitlint/cli,@commitlint/config-angular"
   },
   "dependencies": {
-    "@donews/nestjs-config": "0.10.0",
+    "@donews/nestjs-config": "0.10.2",
     "@donews/nestjs-logger": "0.10.0",
     "@donews/nestjs-prom": "0.10.2",
     "@nestjs/common": "8.4.1",
