@@ -19,7 +19,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "update": "ncu -u -x husky,@types/node,@commitlint/cli,@commitlint/config-angular"
+    "update": "ncu --packageFile package.json -x @types/node"
   },
   "dependencies": {
     "@donews/nestjs-config": "0.10.2",
