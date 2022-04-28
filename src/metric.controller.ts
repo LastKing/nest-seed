@@ -7,8 +7,10 @@ import {
   MetricTypeHistogram,
 } from '@donews/nestjs-prom';
 import { Controller, Get, Header } from '@nestjs/common';
+import { ApiExcludeController } from '@nestjs/swagger';
 import { Registry } from 'prom-client';
 
+@ApiExcludeController()
 @Controller('/metrics')
 export class MetricController {
   constructor(private readonly registry: Registry) {}
