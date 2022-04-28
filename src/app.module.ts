@@ -4,10 +4,13 @@ import { ConfigModule, ConfigService } from '@donews/nestjs-config';
 import { LoggerModule } from '@donews/nestjs-logger';
 import { PromModule, PromModuleOptions } from '@donews/nestjs-prom';
 import { Module } from '@nestjs/common';
+import { APP_PIPE } from '@nestjs/core';
 import * as Joi from 'joi';
 
+import { ApiValidationPipe } from './aop/validetion.pipe';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ExampleModule } from './example/example.module';
 import { MetricController, metrics } from './metric.controller';
 
 @Module({
@@ -51,8 +54,18 @@ import { MetricController, metrics } from './metric.controller';
       },
       metrics,
     ),
+
+    ExampleModule,
   ],
   controllers: [AppController, MetricController],
-  providers: [AppService],
+  providers: [
+    AppService,
+
+    // 全局默认开启 参数校验
+    {
+      provide: APP_PIPE,
+      useClass: ApiValidationPipe,
+    },
+  ],
 })
 export class AppModule {}
