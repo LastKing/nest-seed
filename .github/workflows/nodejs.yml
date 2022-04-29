@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+#          cache: 'pnpm'
       - run: pnpm install
       - run: pnpm run lint
       - run: pnpm run build --if-present
