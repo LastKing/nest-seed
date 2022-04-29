@@ -7,7 +7,7 @@ import { Module } from '@nestjs/common';
 import { APP_PIPE } from '@nestjs/core';
 import * as Joi from 'joi';
 
-import { ApiValidationPipe } from './aop/validetion.pipe';
+import { ApiValidationPipe } from './aop';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ExampleModule } from './example/example.module';
