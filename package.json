@@ -42,8 +42,8 @@
     "swagger-ui-express": "4.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.0.3",
-    "@commitlint/config-angular": "17.0.3",
+    "@commitlint/cli": "17.1.1",
+    "@commitlint/config-angular": "17.1.0",
     "@donews/eslint-config-donews": "1.0.3",
     "@jest/types": "29.0.1",
     "@nestjs/testing": "9.0.11",
