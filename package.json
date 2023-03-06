@@ -55,7 +55,7 @@
     "@typescript-eslint/parser": "5.45.1",
     "cross-env": "7.0.3",
     "eslint": "8.35.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-plugin-import": "2.27.5",
     "gulp": "4.0.2",
     "gulp-typescript": "5.0.1",
