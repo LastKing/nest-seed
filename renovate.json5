@@ -1,10 +1,10 @@
 {
-  "semanticCommits": "auto",
-  "packageRules": [
+  semanticCommits: 'auto',
+  packageRules: [
     {
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "automerge": true
-    }
+      matchDepTypes: ['dependencies', 'devDependencies'],
+      automerge: true,
+    },
   ],
-  "extends": ["config:base"]
+  extends: ['config:base'],
 }
