@@ -50,8 +50,8 @@ dependencies:
     specifier: 7.8.1
     version: 7.8.1
   swagger-ui-express:
-    specifier: 4.6.2
-    version: 4.6.2(express@4.18.2)
+    specifier: 4.6.3
+    version: 4.6.3(express@4.18.2)
 
 devDependencies:
   '@commitlint/cli':
@@ -6755,22 +6755,18 @@ packages:
       es6-symbol: 3.1.3
     dev: true
 
-  /swagger-ui-dist@4.18.1:
-    resolution: {integrity: sha512-n7AT4wzKIPpHy/BGflJOepGMrbY/7Cd5yVd9ptVczaJGAKScbVJrZxFbAE2ZSZa8KmqdQ0+pOs3/5mWY5tSMZQ==}
-    dev: false
-
   /swagger-ui-dist@4.18.2:
     resolution: {integrity: sha512-oVBoBl9Dg+VJw8uRWDxlyUyHoNEDC0c1ysT6+Boy6CTgr2rUcLcfPon4RvxgS2/taNW6O0+US+Z/dlAsWFjOAQ==}
     dev: false
 
-  /swagger-ui-express@4.6.2(express@4.18.2):
-    resolution: {integrity: sha512-MHIOaq9JrTTB3ygUJD+08PbjM5Tt/q7x80yz9VTFIatw8j5uIWKcr90S0h5NLMzFEDC6+eVprtoeA5MDZXCUKQ==}
+  /swagger-ui-express@4.6.3(express@4.18.2):
+    resolution: {integrity: sha512-CDje4PndhTD2HkgyKH3pab+LKspDeB/NhPN2OF1j+piYIamQqBYwAXWESOT1Yju2xFg51bRW9sUng2WxDjzArw==}
     engines: {node: '>= v0.10.32'}
     peerDependencies:
-      express: '>=4.0.0'
+      express: '>=4.0.0 || >=5.0.0-beta'
     dependencies:
       express: 4.18.2
-      swagger-ui-dist: 4.18.1
+      swagger-ui-dist: 4.18.2
     dev: false
 
   /tdigest@0.1.2:
