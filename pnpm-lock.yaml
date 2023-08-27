@@ -39,8 +39,8 @@ dependencies:
     specifier: 1.2.1
     version: 1.2.1
   joi:
-    specifier: 17.9.2
-    version: 17.9.2
+    specifier: 17.10.0
+    version: 17.10.0
   prom-client:
     specifier: 14.2.0
     version: 14.2.0
@@ -4914,8 +4914,8 @@ packages:
       - ts-node
     dev: true
 
-  /joi@17.6.0:
-    resolution: {integrity: sha512-OX5dG6DTbcr/kbMFj0KGYxuew69HPcAE3K/sZpEV2nP6e/j/C0HV+HNiBPCASxdx5T7DMoa0s8UeHWMnb6n2zw==}
+  /joi@17.10.0:
+    resolution: {integrity: sha512-hrazgRSlhzacZ69LdcKfhi3Vu13z2yFfoAzmEov3yFIJlatTdVGUW6vle1zjH8qkzdCn/qGw8rapjqsObbYXAg==}
     dependencies:
       '@hapi/hoek': 9.3.0
       '@hapi/topo': 5.1.0
@@ -4924,8 +4924,8 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: false
 
-  /joi@17.9.2:
-    resolution: {integrity: sha512-Itk/r+V4Dx0V3c7RLFdRh12IOjySm2/WGPMubBT92cQvRfYZhPM2W0hZlctjj72iES8jsRCwp7S/cRmWBnJ4nw==}
+  /joi@17.6.0:
+    resolution: {integrity: sha512-OX5dG6DTbcr/kbMFj0KGYxuew69HPcAE3K/sZpEV2nP6e/j/C0HV+HNiBPCASxdx5T7DMoa0s8UeHWMnb6n2zw==}
     dependencies:
       '@hapi/hoek': 9.3.0
       '@hapi/topo': 5.1.0
