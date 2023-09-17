@@ -39,8 +39,8 @@ dependencies:
     specifier: 1.2.1
     version: 1.2.1
   joi:
-    specifier: 17.10.1
-    version: 17.10.1
+    specifier: 17.10.2
+    version: 17.10.2
   prom-client:
     specifier: 14.2.0
     version: 14.2.0
@@ -4894,8 +4894,8 @@ packages:
       - ts-node
     dev: true
 
-  /joi@17.10.1:
-    resolution: {integrity: sha512-vIiDxQKmRidUVp8KngT8MZSOcmRVm2zV7jbMjNYWuHcJWI0bUck3nRTGQjhpPlQenIQIBC5Vp9AhcnHbWQqafw==}
+  /joi@17.10.2:
+    resolution: {integrity: sha512-hcVhjBxRNW/is3nNLdGLIjkgXetkeGc2wyhydhz8KumG23Aerk4HPjU5zaPAMRqXQFc0xNqXTC7+zQjxr0GlKA==}
     dependencies:
       '@hapi/hoek': 9.3.0
       '@hapi/topo': 5.1.0
