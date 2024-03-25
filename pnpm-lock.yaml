@@ -33,8 +33,8 @@ dependencies:
     specifier: 0.14.1
     version: 0.14.1
   express:
-    specifier: 4.19.1
-    version: 4.19.1
+    specifier: 4.19.2
+    version: 4.19.2
   iterare:
     specifier: 1.2.1
     version: 1.2.1
@@ -55,7 +55,7 @@ dependencies:
     version: 7.8.1
   swagger-ui-express:
     specifier: 5.0.0
-    version: 5.0.0(express@4.19.1)
+    version: 5.0.0(express@4.19.2)
 
 devDependencies:
   '@commitlint/cli':
@@ -3261,8 +3261,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /express@4.19.1:
-    resolution: {integrity: sha512-K4w1/Bp7y8iSiVObmCrtq8Cs79XjJc/RU2YYkZQ7wpUu5ZyZ7MtPHkqoMz4pf+mgXfNvo2qft8D9OnrH2ABk9w==}
+  /express@4.19.2:
+    resolution: {integrity: sha512-5T6nhjsT+EOMzuck8JjBHARTHfMht0POzlA60WV2pMD3gyXw2LZnZ+ueGdNxG+0calOJcWKbpFcuzLZ91YWq9Q==}
     engines: {node: '>= 0.10.0'}
     dependencies:
       accepts: 1.3.8
@@ -6815,13 +6815,13 @@ packages:
     resolution: {integrity: sha512-NUHSYoe5XRTk/Are8jPJ6phzBh3l9l33nEyXosM17QInoV95/jng8+PuSGtbD407QoPf93MH3Bkh773OgesJpA==}
     dev: false
 
-  /swagger-ui-express@5.0.0(express@4.19.1):
+  /swagger-ui-express@5.0.0(express@4.19.2):
     resolution: {integrity: sha512-tsU9tODVvhyfkNSvf03E6FAk+z+5cU3lXAzMy6Pv4av2Gt2xA0++fogwC4qo19XuFf6hdxevPuVCSKFuMHJhFA==}
     engines: {node: '>= v0.10.32'}
     peerDependencies:
       express: '>=4.0.0 || >=5.0.0-beta'
     dependencies:
-      express: 4.19.1
+      express: 4.19.2
       swagger-ui-dist: 5.9.0
     dev: false
 
