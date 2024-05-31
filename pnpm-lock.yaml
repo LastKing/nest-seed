@@ -57,8 +57,8 @@ importers:
         specifier: 7.8.1
         version: 7.8.1
       swagger-ui-express:
-        specifier: 5.0.0
-        version: 5.0.0(express@4.19.2)
+        specifier: 5.0.1
+        version: 5.0.1(express@4.19.2)
     devDependencies:
       '@commitlint/cli':
         specifier: 19.3.0
@@ -3217,11 +3217,8 @@ packages:
   swagger-ui-dist@5.11.2:
     resolution: {integrity: sha512-jQG0cRgJNMZ7aCoiFofnoojeSaa/+KgWaDlfgs8QN+BXoGMpxeMVY5OEnjq4OlNvF3yjftO8c9GRAgcHlO+u7A==}
 
-  swagger-ui-dist@5.9.0:
-    resolution: {integrity: sha512-NUHSYoe5XRTk/Are8jPJ6phzBh3l9l33nEyXosM17QInoV95/jng8+PuSGtbD407QoPf93MH3Bkh773OgesJpA==}
-
-  swagger-ui-express@5.0.0:
-    resolution: {integrity: sha512-tsU9tODVvhyfkNSvf03E6FAk+z+5cU3lXAzMy6Pv4av2Gt2xA0++fogwC4qo19XuFf6hdxevPuVCSKFuMHJhFA==}
+  swagger-ui-express@5.0.1:
+    resolution: {integrity: sha512-SrNU3RiBGTLLmFU8GIJdOdanJTl4TOmT27tt3bWWHppqYmAZ6IDuEuBvMU6nZq0zLEe6b/1rACXCgLZqO6ZfrA==}
     engines: {node: '>= v0.10.32'}
     peerDependencies:
       express: '>=4.0.0 || >=5.0.0-beta'
@@ -7181,12 +7178,10 @@ snapshots:
 
   swagger-ui-dist@5.11.2: {}
 
-  swagger-ui-dist@5.9.0: {}
-
-  swagger-ui-express@5.0.0(express@4.19.2):
+  swagger-ui-express@5.0.1(express@4.19.2):
     dependencies:
       express: 4.19.2
-      swagger-ui-dist: 5.9.0
+      swagger-ui-dist: 5.11.2
 
   tdigest@0.1.2:
     dependencies:
