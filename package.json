@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.1",
-    "@commitlint/config-angular": "19.6.0",
+    "@commitlint/config-angular": "19.7.0",
     "@donews/eslint-config-donews": "1.0.3",
     "@jest/types": "29.6.3",
     "@nestjs/testing": "10.4.15",
