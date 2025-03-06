@@ -12,5 +12,8 @@
     "baseUrl": "./src",
     "lib": ["esnext"],
     "noImplicitReturns": true
+  },
+  "ts-node": {
+    "transpileOnly": true
   }
 }

@@ -19,7 +19,7 @@ export class MetricHistogramInterceptor implements NestInterceptor {
     private readonly requestHistogram: Histogram<string>,
   ) {}
 
-  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+  intercept(context: ExecutionContext, next: CallHandler): Observable<unknown> {
     const end = this.requestHistogram.startTimer();
     const controller = context.getClass().name;
     const handler = context.getHandler().name;
