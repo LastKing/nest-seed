@@ -4,9 +4,10 @@ ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /data/app
 
-COPY package.json /data/app/
-COPY pnpm-lock.yaml /data/app/
-RUN npm install --registry=https://registry.npm.taobao.org
+RUN corepack enable
+
+COPY package.json pnpm-lock.yaml /data/app/
+RUN pnpm install --registry=https://registry.npmmirror.com
 
 ADD . /data/app
 

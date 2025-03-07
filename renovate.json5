@@ -5,6 +5,10 @@
       matchDepTypes: ['dependencies', 'devDependencies'],
       automerge: true,
     },
+    {
+      matchPackageNames: ['rimraf'],
+      enabled: false,
+    },
   ],
   extends: ['config:base'],
 }
