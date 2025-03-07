@@ -23,7 +23,7 @@
     "update": "ncu --packageFile package.json -x @types/node"
   },
   "dependencies": {
-    "@donews/nestjs-config": "0.10.2",
+    "@donews/nestjs-config": "0.11.1",
     "@donews/nestjs-logger": "0.10.2",
     "@donews/nestjs-prom": "0.10.2",
     "@nestjs/common": "11.0.11",
