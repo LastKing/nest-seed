@@ -42,8 +42,8 @@
     "swagger-ui-express": "5.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-angular": "19.8.1",
+    "@commitlint/cli": "20.0.0",
+    "@commitlint/config-angular": "20.0.0",
     "@donews/eslint-config-donews": "1.0.3",
     "@eslint/js": "9.36.0",
     "@jest/types": "30.0.5",
