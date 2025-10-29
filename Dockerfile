@@ -1,5 +1,5 @@
 # 拉取node镜像
-FROM node:22.14.0
+FROM node:24.11.0
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /data/app
