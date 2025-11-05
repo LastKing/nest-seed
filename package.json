@@ -96,7 +96,7 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.20.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@nestjs/core",
