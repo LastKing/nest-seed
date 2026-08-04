@@ -1,14 +1,40 @@
 {
-  semanticCommits: 'auto',
+  extends: ['config:recommended'],
+
+  // 强制使用 Conventional Commits 风格
+  semanticCommits: 'enabled',
+
+  // 未通过 minimumReleaseAge 检查时，不创建分支和 PR
+  internalChecksFilter: 'strict',
+
+  // 不再更新 rimraf
+  ignoreDeps: ['rimraf'],
+
+  // 所有普通 Renovate PR 添加 dependencies 标签
+  labels: ['dependencies'],
+  // 安全更新额外添加 security 标签，并同样等待 1 天
+  vulnerabilityAlerts: {
+    addLabels: ['security'],
+  },
+
+  // 所有普通依赖发布满 24 小时后才允许更新
+  minimumReleaseAge: '1 day',
+
   packageRules: [
     {
+      // npm 的 patch 和 minor 更新自动合并
+      matchDatasources: ['npm'],
       matchDepTypes: ['dependencies', 'devDependencies'],
+      matchUpdateTypes: ['patch', 'minor'],
       automerge: true,
     },
     {
-      matchPackageNames: ['rimraf'],
-      enabled: false,
+      // npm 的 major 更新必须在 Dependency Dashboard 中批准
+      matchDatasources: ['npm'],
+      matchDepTypes: ['dependencies', 'devDependencies'],
+      matchUpdateTypes: ['major'],
+      dependencyDashboardApproval: true,
+      automerge: false,
     },
   ],
-  extends: ['config:base'],
 }
