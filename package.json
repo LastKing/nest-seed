@@ -96,11 +96,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@10.20.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@nestjs/core",
-      "@scarf/scarf"
-    ]
-  }
+  "packageManager": "pnpm@11.18.0"
 }

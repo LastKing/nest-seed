@@ -1,0 +1,6 @@
+allowBuilds:
+  '@scarf/scarf': true
+  unrs-resolver: true
+
+minimumReleaseAge:
+  - '@typescript-eslint/eslint-plugin'
